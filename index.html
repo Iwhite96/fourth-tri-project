@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fourth Trimester Services</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="app.js"></script>
+    <script src="app.js" defer></script>
     <script
       src="https://kit.fontawesome.com/63a77cea2d.js"
       crossorigin="anonymous"
@@ -26,12 +26,39 @@
           </li>
           <li class="nav__link" onclick="toggleModal()">
             <a href="#">Contact</a>
-          </li>
-          <li class="nav__link-burg">
-            <a href="#"><i class="fa-solid fa-bars"></i></a>
-          </li>
-        </ul>
+          </li> 
+        </ul> <button class="btn__menu" onclick="openMenu()">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        
+          <div class="menu__backdrop" style="visibility: hidden;">
+            <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+              <i class="fas fa-times"></i>
+            </button>
+            <ul class="menu__links">
+              <li class="menu__list">
+                <a href="#" class="menu__link" onclick="closeMenu()">About</a>
+              </li>
+              <li class="menu__list">
+                <a href="#" class="menu__link" onclick="closeMenu()">Services</a>
+              </li>
+              <li class="menu__list">
+                <a class="menu__link no-cursor" onclick="closeMenu()">Contacts</a>
+              </li>
+              <li class="menu__list">
+                <a href="#" class="menu__link" onclick="closeMenu()">About</a>
+              </li>
+              <li class="menu__list">
+                <a href="#" class="menu__link" onclick="closeMenu()">Services</a>
+              </li>
+              <li class="menu__list">
+                <a class="menu__link no-cursor" onclick="closeMenu()">Contacts</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
+    </section>
       <header class="header">
         <div class="header__content">
           <div class="header__wrapper">
@@ -71,33 +98,67 @@
           <i class="fa-solid fa-envelope"></i>
         </button>
       </a>
-    </section>
-    <section class="hidden">
+    
+    <section class="about">
       <div class="about__wrapper">
         <div class="about__description">
           <h1 class="intro">
-            <span class="orange">Introducing</span>
+            <span class="orange hidden">Introducing</span>
           </h1>
-          
-          <p class="about__para">
-            Introducing Fourth Trimester Services, your trusted partner in
-            postpartum care in Northeast Ohio. We specialize in providing
-            comprehensive support and guidance to mothers and families during
-            the crucial postpartum period. With our experienced team of
-            birth/postpartum workers, we offer personalized care, ensuring a
-            smooth transition into parenthood. At Fourth Trimester Services, we
-            understand the unique needs of new mothers and their babies. Our
-            compassionate approach focuses on nurturing both physical and
-            emotional well-being, empowering families to thrive during this
-            transformative time. Whether it's breastfeeding support, newborn
-            care education, or postpartum recovery assistance, our dedicated
-            team is committed to delivering exceptional care and guidance
-            tailored to your individual needs. Experience a supportive and
-            holistic approach to postpartum care with Fourth Trimester Services.
+
+          <p class="about__para hidden">
+            Fourth Trimester Services, your trusted partner in postpartum care
+            in Northeast Ohio. We specialize in providing comprehensive support
+            and guidance to mothers and families during the crucial postpartum
+            period. With our experienced team of birth/postpartum workers, we
+            offer personalized care, ensuring a smooth transition into
+            parenthood. At Fourth Trimester Services, we understand the unique
+            needs of new mothers and their babies. Our compassionate approach
+            focuses on nurturing both physical and emotional well-being,
+            empowering families to thrive during this transformative time.
+            Whether it's breastfeeding support, newborn care education, or
+            postpartum recovery assistance, our dedicated team is committed to
+            delivering exceptional care and guidance tailored to your individual
+            needs. Experience a supportive and holistic approach to postpartum
+            care with Fourth Trimester Services.
           </p>
         </div>
       </div>
     </section>
+    <section class="">
+        <div class="header__space">
+            <h1 class="about__us--header hidden"><span class="orange">About</span></h1>
+        </div>
+      <div class="about__us--wrapper">
+        
+        <div class="about__us">
+          <div class="about__us--left hidden">
+            <h2 class="au__h2">Our Vision</h2>
+            <p class="au__para">
+              Our vision is to create a global movement that redefines the
+              postpartum journey. At the heart of our vision lies the
+              transformation of postpartum into a time of rest and healing. We
+              imagine a future where every woman and family is enveloped in a
+              nurturing embrace, where birthing signifies not just the arrival
+              of a new life but a rebirth of the self. We see a world where our
+              sacred spaces become beacons of hope, driving forward a legacy of
+              healthy, educated, and united families.
+            </p>
+          </div>
+          <div class="about__us--right hidden">
+            <h2 class="au__h2">Our Mission</h2>
+            <p class="au__para">
+              To revolutionize the postpartum experience, embracing birthing as
+              a process of rebirth and renewal by creating a safe haven of
+              expert care, accessible education, and unwavering support, we
+              envision a world where families emerge stronger. For every woman,
+              man, and family, regardless of background, we are devoted to
+              ushering in a new era of empowered parenthood, where freedom,
+              health, and holistic well-being reign.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
-  
 </html>
